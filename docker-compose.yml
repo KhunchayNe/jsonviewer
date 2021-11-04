@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  jsonviewer:
+    build: .
+    image: nginx:1.21.3
+    volumes:
+      - .:/usr/share/nginx/html
+    ports:
+      - "9080:80"
